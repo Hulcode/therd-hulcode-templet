@@ -138,6 +138,12 @@ z-index: 1;
   left: 0;
   
 }
+@media (max-width:900px) {
+  .dots
+  {
+    display: none;
+  }
+}
 /* global rules */
 /* header */
 header {
@@ -910,6 +916,7 @@ header .maga-minu .links li a i {
   position: absolute;
   left: 0;
   top: 0;
+  transition: width 0.6s linear ;
 }
 /* skills */
 /* how it works */
@@ -1022,8 +1029,8 @@ header .maga-minu .links li a i {
 .events .container .info .time {
   display: flex;
   align-items: center;
-  margin: 20px auto;
-  gap: 10px;
+  margin: 20px -7px;
+  gap: 7px;
   justify-content: center;
 }
 
@@ -1031,14 +1038,15 @@ header .maga-minu .links li a i {
   border: 1px solid #d4d4d4;
   border-radius: 6px;
   text-align: center;
-  width: 75px;
+  width: 85px;
   transition: var(--transition);
 }
 .events .container .info .time .unit span {
   display: block;
+    text-align: center;
 }
 .events .container .info .time .unit span:first-child {
-  font-size: 35px;
+  font-size: 33px;
   padding: 15px;
   color: var(--main-color);
   font-weight: bold;
